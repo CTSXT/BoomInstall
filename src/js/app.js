@@ -8,6 +8,9 @@ const arrayToPluck = [
     { job: "programmer", class: "is-danger" },
   ];
   const articles = document.querySelectorAll("article");
-  const filteredArray = R.filter(, );
+  const a=R.pluck('class',arrayToPick);
+  articles.forEach((elem,indx)=>{
+  elem.classList.add(a[indx])
+})
   
 });
